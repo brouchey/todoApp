@@ -23,8 +23,12 @@ angular.module('todoListApp')
      };
      $scope.addTodo = function(todo) {
           var todo = {name: "This is a new task."};
-          $scope.todos.push(todo);
+          // $scope.todos.push(todo);
           // push the new object, UI will automatically be refreshed when the data is updated
+          $scope.todos.unshift(todo);
+          // push adds values at the end of the array
+          // unshift is the opposite, it adds values at the beginning of the array
+          // so we use unshift to have new task displayed on the top
      };
 
 })
