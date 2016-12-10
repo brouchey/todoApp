@@ -1,3 +1,4 @@
+// some testing
 angular.module("todoListApp")     // no second parameter, because module is already created in app.js so we want Angular to check in existing modules
 .directive('helloWorld', function( ) {     // to attach a new directive to the module
      return {     // object
