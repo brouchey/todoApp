@@ -1,1 +1,1 @@
-angular.module("todoListApp", [])		// creates new module, second parameter defines dependencies
+angular.module("todoListApp", []);		// creates new module, second parameter defines dependencies

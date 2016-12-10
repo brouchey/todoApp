@@ -19,7 +19,7 @@ angular.module('todoListApp')
           // .splice changes the content of todos array, adding new elements while removing old elements
      };
 
-     $scope.saveTodos = function(todo) {
+     $scope.saveTodos = function() {
           var filteredTodos = $scope.todos.filter(function(todo) {     // filter todos into a new array filteredTodos
              if(todo.edited) {     // if a todo has been edited
                   return todo;     // return it
@@ -29,7 +29,7 @@ angular.module('todoListApp')
      };
 
      $scope.addTodo = function(todo) {
-          var todo = {name: "This is a new task."};
+          var todo = {name: "This is a new todo."};
           // $scope.todos.push(todo);
           // push the new object, UI will automatically be refreshed when the data is updated
           $scope.todos.unshift(todo);
