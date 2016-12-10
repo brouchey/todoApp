@@ -9,13 +9,13 @@
      <body ng-app="todoListApp">
 
 					<h1>My TODOs</h1>
-          <div class="list">
+          <div ng-controller="mainCtrl" class="list">		<!-- now the $scope is this div -->
                <input type="checkbox" />
                <label class="editing-label">A sample todo!</label>
                <input class="editing-label" type="text" />
                <div class="actions">
-                    <a href="">Edit</a>     <!-- href is empty because we don't want to trigger any page when clicked -->
-                    <a href="">Save</a>
+                    <a href="">Edit</a>
+                    <a href="" ng-click="helloWorld()">Save</a> 	<!-- execute function on the click -->
                     <a href="" class="delete">Delete</a>
                </div>
           </div>
